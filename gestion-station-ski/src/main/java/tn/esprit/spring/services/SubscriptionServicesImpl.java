@@ -25,18 +25,31 @@ public class SubscriptionServicesImpl implements ISubscriptionServices{
 
     @Override
     public Subscription addSubscription(Subscription subscription) {
-        switch (subscription.getTypeSub()) {
-            case ANNUAL:
-                subscription.setEndDate(subscription.getStartDate().plusYears(1));
-                break;
-            case SEMESTRIEL:
-                subscription.setEndDate(subscription.getStartDate().plusMonths(6));
-                break;
-            case MONTHLY:
-                subscription.setEndDate(subscription.getStartDate().plusMonths(1));
-                break;
+        log.info("Adding new subscription: {}", subscription);
+
+        try {
+            switch (subscription.getTypeSub()) {
+                case ANNUAL:
+                    subscription.setEndDate(subscription.getStartDate().plusYears(1));
+                    break;
+                case SEMESTRIEL:
+                    subscription.setEndDate(subscription.getStartDate().plusMonths(6));
+                    break;
+                case MONTHLY:
+                    subscription.setEndDate(subscription.getStartDate().plusMonths(1));
+                    break;
+                default:
+                    log.warn("Unrecognized subscription type: {}", subscription.getTypeSub());
+            }
+
+            Subscription savedSubscription = subscriptionRepository.save(subscription);
+            log.info("Successfully added subscription with ID: {}", savedSubscription.getNumSub());
+            return savedSubscription;
+
+        } catch (Exception e) {
+            log.error("Error adding subscription", e);
+            return null;
         }
-        return subscriptionRepository.save(subscription);
     }
 
     @Override
