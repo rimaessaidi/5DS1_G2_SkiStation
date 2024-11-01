@@ -30,7 +30,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -48,6 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "DhiaBenAmmar__5DS1__G2",
     "last_opened_file_path": "C:/Users/onsbe/IdeaProjects/gestion-station-ski",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.haulmont.jpb.repository",
