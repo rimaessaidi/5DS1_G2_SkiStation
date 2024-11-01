@@ -59,8 +59,12 @@
 		<repository>
 			<id>deploymentRepo</id>
 			<name>Nexus Repository</name>
-			<url> http://localhost:8081/repository/maven-releases/</url>
+			<url> http://172.10.0.140:8081/repository/maven-releases/</url>
 		</repository>
+		<snapshotRepository>
+			<id>snapshotRepo</id> <!-- Identifier for the snapshot repository -->
+			<url>http://172.10.0.140:8081/repository/maven-snapshots/</url> <!-- URL for snapshot repo -->
+		</snapshotRepository>
 	</distributionManagement>
 	<build>
 		<plugins>
@@ -75,6 +79,25 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.10</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>  <!-- Enables JaCoCo agent during tests -->
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>verify</phase>  <!-- Generate reports after tests -->
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

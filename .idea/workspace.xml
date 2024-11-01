@@ -6,7 +6,56 @@
   <component name="ChangeListManager">
     <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/GestionStationSkiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/configs/OpenAPIConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/CourseRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/InstructorRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/PisteRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/RegistrationRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SkierRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SubscriptionRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Instructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Piste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Subscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Support.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeSubscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ICourseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IInstructorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IPisteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IRegistrationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISkierRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISubscriptionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/CourseServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ICourseServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IInstructorServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IPisteServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IRegistrationServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISkierServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISubscriptionServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/InstructorServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/PisteServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.GestionStationSkiApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.GestionStationSkiApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/GestionStationSkiApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +71,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="isDesignerTabSelected" value="false" />
     <option name="isToolWindowVisible" value="false" />
@@ -36,6 +88,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2KGNd8t6XpRwSpXk8oPXy7yBMPg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,6 +98,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.gestion-station-ski [clean].executor": "Run",
+    "Maven.gestion-station-ski [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -51,11 +108,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/onsbe/IdeaProjects/gestion-station-ski",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Esprit/5eme/ESPRIT/DevOps/5DS1_G2_SkiStation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "com.haulmont.jpb.repository",
-    "spring.configuration.checksum": "979cb177730d39751abecc44667566eb"
+    "spring.configuration.checksum": "979cb177730d39751abecc44667566eb",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -96,6 +160,7 @@
       <workItem from="1677660361089" duration="5520000" />
       <workItem from="1678263716222" duration="4902000" />
       <workItem from="1678477671834" duration="21933000" />
+      <workItem from="1730486734032" duration="1936000" />
     </task>
     <servers />
   </component>
