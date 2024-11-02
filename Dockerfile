@@ -11,4 +11,4 @@ COPY target/gestion-station-ski-1.0.jar /app/ski.jar
 EXPOSE 8089
 
 # Run the application
-CMD ["java", "-jar", "ski.jar"]
+CMD ["java", "-jar", "app.jar"]
