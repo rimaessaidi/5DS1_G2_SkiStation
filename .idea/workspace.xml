@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/dto/SkierDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/dto/SkierDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Skier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Skier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/SkierServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/services/SkierServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/SkierServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/SkierServicesImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SkierRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SkierRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +98,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SkierServicesImplTest">
+  <component name="RunManager" selected="JUnit.SkierControllerRestTest">
     <configuration name="CourseServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gestion-station-ski" />
       <extension name="coverage">
@@ -146,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SkierServicesImplTest" />
         <item itemvalue="JUnit.SkierControllerRestTest" />
+        <item itemvalue="JUnit.SkierServicesImplTest" />
         <item itemvalue="JUnit.CourseServicesImplTest" />
       </list>
     </recent_temporary>
@@ -176,7 +183,7 @@
       <workItem from="1730497056654" duration="1355000" />
       <workItem from="1730567712830" duration="2764000" />
       <workItem from="1730574482945" duration="8315000" />
-      <workItem from="1730630316819" duration="9500000" />
+      <workItem from="1730630316819" duration="10825000" />
     </task>
     <servers />
   </component>

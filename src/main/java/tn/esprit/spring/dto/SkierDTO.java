@@ -8,7 +8,6 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @FieldDefaults(level=AccessLevel.PRIVATE)
 public class SkierDTO {
     Long numSkier; // Optional, if you want to expose it on creation/update

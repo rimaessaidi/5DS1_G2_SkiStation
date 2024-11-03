@@ -54,13 +54,15 @@ public class SkierServicesImplTest {
         skier.setLastName("Doe");
         skier.setCity("Aspen");
 
+
+
         subscription = new Subscription();
         subscription.setNumSub(1L);
         subscription.setTypeSub(TypeSubscription.ANNUAL);
         subscription.setStartDate(LocalDate.now());
         skier.setSubscription(subscription);
         skier.setRegistrations(new HashSet<>());
-        skier.setPistes(new HashSet<>()); // Initialize pistes
+        skier.setPistes(new HashSet<>());
     }
 
     @Test
@@ -84,7 +86,7 @@ public class SkierServicesImplTest {
         assertEquals(skier.getNumSkier(), result.getNumSkier());
         assertEquals(subscription.getEndDate(), skier.getSubscription().getEndDate());
         verify(skierRepository).save(skier);
-        log.info("\nAdded skier: {}", result);
+        log.info("\nAdded skier: {}", result.toString());
     }
 
     @Test
