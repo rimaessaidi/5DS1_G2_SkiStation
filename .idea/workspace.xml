@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Maven.gestion-station-ski [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gestion-station-ski [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gestion-station-ski [deploy].executor&quot;: &quot;Run&quot;,
     &quot;Maven.gestion-station-ski [install].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -73,6 +80,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\OneDrive\Documents\GitHub\5DS1_G2_SkiStation\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tn.esprit.spring.configs" />
     </key>
@@ -120,7 +130,9 @@
       <workItem from="1678477671834" duration="21933000" />
       <workItem from="1730495553413" duration="682000" />
       <workItem from="1730554888872" duration="964000" />
-      <workItem from="1730566225199" duration="2322000" />
+      <workItem from="1730566225199" duration="10790000" />
+      <workItem from="1730581329131" duration="54000" />
+      <workItem from="1730582075382" duration="1201000" />
     </task>
     <servers />
   </component>
