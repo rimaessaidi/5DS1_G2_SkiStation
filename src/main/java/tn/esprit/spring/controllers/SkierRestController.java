@@ -18,17 +18,6 @@ import java.util.List;
 public class SkierRestController {
 
     private final ISkierServices skierServices;
-
-    public Skier convertToEntity(SkierDTO skierDTO) {
-        Skier skier = new Skier();
-        skier.setFirstName(skierDTO.getFirstName());
-        skier.setLastName(skierDTO.getLastName());
-        skier.setDateOfBirth(skierDTO.getDateOfBirth());
-        skier.setCity(skierDTO.getCity());
-        // Set subscription if needed
-        return skier;
-    }
-
     @Operation(description = "Add Skier")
     @PostMapping("/add")
     public Skier addSkier(@RequestBody SkierDTO skierDTO) {
