@@ -14,7 +14,7 @@ services:
 
 
   spring_app:
-    image: dhia257/exam
+    image: ${REGISTRY}:${BUILD_NUMBER}
     container_name: exam
     restart: on-failure
     ports:
