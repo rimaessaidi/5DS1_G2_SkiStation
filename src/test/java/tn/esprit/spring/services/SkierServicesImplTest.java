@@ -1,6 +1,5 @@
 package tn.esprit.spring.services;
 
-import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,14 +10,17 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import tn.esprit.spring.entities.*;
 import tn.esprit.spring.repositories.*;
+
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-@SpringBootTest
 @Slf4j // Adds a logger with Lombok
+@SpringBootTest
 @RunWith(SpringRunner.class)
 public class SkierServicesImplTest {
 
@@ -55,6 +57,8 @@ public class SkierServicesImplTest {
         subscription.setNumSub(1L);
         subscription.setTypeSub(TypeSubscription.ANNUAL);
         subscription.setStartDate(LocalDate.now());
+        skier.setSubscription(subscription);
+        skier.setRegistrations(new HashSet<>());
     }
 
     @Test
@@ -62,23 +66,24 @@ public class SkierServicesImplTest {
         when(skierRepository.findAll()).thenReturn(Arrays.asList(skier));
         List<Skier> result = skierServices.retrieveAllSkiers();
 
-        log.info("\nTest RetrieveAllSkiers: {} ", result );
         assertNotNull(result);
         assertEquals(1, result.size());
         assertEquals(skier.getNumSkier(), result.get(0).getNumSkier());
         verify(skierRepository).findAll();
+        log.info("\nTest AssignSkierToSubscription: Assigned Skier {} to Subscription {}", skier, subscription);
     }
 
     @Test
     public void testAddSkier() {
-        skier.setSubscription(subscription);
         when(skierRepository.save(any(Skier.class))).thenReturn(skier);
 
         Skier result = skierServices.addSkier(skier);
-        log.info("\nTest AddSkier: Added Skier {}", result);
         assertNotNull(result);
+        assertEquals(skier.getNumSkier(), result.getNumSkier());
         assertEquals(subscription.getEndDate(), skier.getSubscription().getEndDate());
         verify(skierRepository).save(skier);
+        log.info("\nTest AssignSkierToSubscription: Assigned Skier {} to Subscription {}", skier, subscription);
+        
     }
 
     @Test
@@ -88,9 +93,65 @@ public class SkierServicesImplTest {
         when(skierRepository.save(any(Skier.class))).thenReturn(skier);
 
         Skier result = skierServices.assignSkierToSubscription(1L, 1L);
-        log.info("\nTest AssignSkierToSubscription: Assigned Skier {} to Subscription {}", skier, subscription);
         assertNotNull(result);
         assertEquals(subscription, result.getSubscription());
         verify(skierRepository).save(skier);
+    }
+
+    @Test
+    public void testAddSkierAndAssignToCourse() {
+        Course course = new Course();
+        course.setNumCourse(1L);
+
+        when(courseRepository.getById(1L)).thenReturn(course);
+        when(skierRepository.save(any(Skier.class))).thenReturn(skier);
+
+        Skier result = skierServices.addSkierAndAssignToCourse(skier, 1L);
+        assertNotNull(result);
+        verify(courseRepository).getById(1L);
+        verify(registrationRepository, times(skier.getRegistrations().size())).save(any(Registration.class));
+    }
+
+    @Test
+    public void testRemoveSkier() {
+        doNothing().when(skierRepository).deleteById(1L);
+        skierServices.removeSkier(1L);
+        verify(skierRepository).deleteById(1L);
+    }
+
+    @Test
+    public void testRetrieveSkier() {
+        when(skierRepository.findById(1L)).thenReturn(Optional.of(skier));
+        Skier result = skierServices.retrieveSkier(1L);
+
+        assertNotNull(result);
+        assertEquals(skier.getNumSkier(), result.getNumSkier());
+        verify(skierRepository).findById(1L);
+    }
+
+    @Test
+    public void testAssignSkierToPiste() {
+        Piste piste = new Piste();
+        piste.setNumPiste(1L);
+
+        when(skierRepository.findById(1L)).thenReturn(Optional.of(skier));
+        when(pisteRepository.findById(1L)).thenReturn(Optional.of(piste));
+        when(skierRepository.save(any(Skier.class))).thenReturn(skier);
+
+        Skier result = skierServices.assignSkierToPiste(1L, 1L);
+        assertNotNull(result);
+        assertTrue(result.getPistes().contains(piste));
+        verify(skierRepository).save(skier);
+    }
+
+    @Test
+    public void testRetrieveSkiersBySubscriptionType() {
+        when(skierRepository.findBySubscription_TypeSub(TypeSubscription.ANNUAL)).thenReturn(Arrays.asList(skier));
+        List<Skier> result = skierServices.retrieveSkiersBySubscriptionType(TypeSubscription.ANNUAL);
+
+        assertNotNull(result);
+        assertEquals(1, result.size());
+        assertEquals(skier.getNumSkier(), result.get(0).getNumSkier());
+        verify(skierRepository).findBySubscription_TypeSub(TypeSubscription.ANNUAL);
     }
 }
