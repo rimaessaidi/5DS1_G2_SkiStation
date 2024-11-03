@@ -100,7 +100,7 @@ public class SubscriptionServicesImpl implements ISubscriptionServices{
     }
 
     // @Scheduled(cron = "* 0 9 1 * *") /* Cron expression to run a job every month at 9am */
-    @Scheduled(cron = "*/30 * * * * *") /* Cron expression to run a job every 30 secondes */
+    @Scheduled(cron = "* 0 9 1 * *") /* Cron expression to run a job every 30 secondes */
     public void showMonthlyRecurringRevenue() {
         log.info("Calculating monthly recurring revenue");
         try {
