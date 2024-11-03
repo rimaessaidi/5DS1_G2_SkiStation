@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/CourseServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/CourseServicesImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" afterDir="false" />
     </list>
@@ -51,34 +50,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.gestion-station-ski [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gestion-station-ski [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gestion-station-ski [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gestion-station-ski [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;RimaEssaïdi__5DS1__G2&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/onsbe/IdeaProjects/gestion-station-ski&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;979cb177730d39751abecc44667566eb&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CourseServicesImplTest.executor": "Run",
+    "Maven.gestion-station-ski [clean].executor": "Run",
+    "Maven.gestion-station-ski [compile].executor": "Run",
+    "Maven.gestion-station-ski [deploy].executor": "Run",
+    "Maven.gestion-station-ski [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "RimaEssaïdi__5DS1__G2",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/onsbe/IdeaProjects/gestion-station-ski",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24367817",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "979cb177730d39751abecc44667566eb",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HP\OneDrive\Documents\GitHub\5DS1_G2_SkiStation\src" />
@@ -92,7 +92,22 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CourseServicesImplTest">
+    <configuration name="CourseServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gestion-station-ski" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.spring.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tn.esprit.spring.services" />
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.spring.services.CourseServicesImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GestionStationSkiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gestion-station-ski" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="tn.esprit.spring.GestionStationSkiApplication" />
@@ -100,6 +115,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CourseServicesImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -133,6 +153,8 @@
       <workItem from="1730566225199" duration="10790000" />
       <workItem from="1730581329131" duration="54000" />
       <workItem from="1730582075382" duration="1201000" />
+      <workItem from="1730630321590" duration="1600000" />
+      <workItem from="1730631939193" duration="1171000" />
     </task>
     <servers />
   </component>

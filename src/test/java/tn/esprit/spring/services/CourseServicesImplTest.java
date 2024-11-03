@@ -1,5 +1,6 @@
 package tn.esprit.spring.services;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import tn.esprit.spring.entities.Course;
 import tn.esprit.spring.repositories.ICourseRepository;
 import java.util.ArrayList;
@@ -57,8 +58,8 @@ public class CourseServicesImplTest {
         List<Course> result = courseServices.retrieveAllCourses();
         // Use streams to format the output for better readability
         String formattedCourses = result.stream()
-                .map(course -> String.format("\nCourse ID: %d, Level: %d, Price: %.2f ",
-                        course.getNumCourse(), course.getLevel(), course.getPrice()))
+                .map(c -> String.format("%nCourse ID: %d, Level: %d, Price: %.2f ",
+                        c.getNumCourse(), c.getLevel(), c.getPrice()))
                 .collect(Collectors.joining());
 
         log.info("\n Retrieved courses: {}", formattedCourses);
