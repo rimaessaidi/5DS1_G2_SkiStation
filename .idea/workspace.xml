@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
+    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="committt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.GestionStationSkiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.GestionStationSkiApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.GestionStationSkiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.GestionStationSkiApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.gestion-station-ski [clean].executor": "Run",
+    "Maven.gestion-station-ski [install].executor": "Run",
+    "Maven.gestion-station-ski [test].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -106,7 +111,47 @@
       <option name="project" value="LOCAL" />
       <updated>1730475500451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SubscriptionRepositoryUnitTest creation">
+      <option name="closed" value="true" />
+      <created>1730539438475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730539438475</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main test class creation">
+      <option name="closed" value="true" />
+      <created>1730539814145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730539814145</updated>
+    </task>
+    <task id="LOCAL-00004" summary="@repo">
+      <option name="closed" value="true" />
+      <created>1730560174416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730560174416</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test changes and servicestest imp">
+      <option name="closed" value="true" />
+      <created>1730595244536</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730595244536</updated>
+    </task>
+    <task id="LOCAL-00006" summary="committt">
+      <option name="closed" value="true" />
+      <created>1730595415534</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730595415534</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +159,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout de assetTrue" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de assetTrue" />
+    <MESSAGE value="SubscriptionRepositoryUnitTest creation" />
+    <MESSAGE value="Main test class creation" />
+    <MESSAGE value="@repo" />
+    <MESSAGE value="test changes and servicestest imp" />
+    <MESSAGE value="committt" />
+    <option name="LAST_COMMIT_MESSAGE" value="committt" />
   </component>
 </project>
