@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-public class SubscriptionServicesImplTest {
+ class SubscriptionServicesImplTest {
 
     @Mock
     private ISubscriptionRepository subscriptionRepository;
@@ -30,7 +30,7 @@ public class SubscriptionServicesImplTest {
     private SubscriptionServicesImpl subscriptionServices;
 
     @Test
-    public void testAddSubscription() {
+     void testAddSubscription() {
         // Given
         Subscription subscription = new Subscription();
         subscription.setStartDate(LocalDate.now());
@@ -46,7 +46,7 @@ public class SubscriptionServicesImplTest {
     }
 
     @Test
-    public void testRetrieveSubscriptionById() {
+     void testRetrieveSubscriptionById() {
         // Given
         Long numSubscription = 1L;
         Subscription subscription = new Subscription();
