@@ -62,7 +62,7 @@ public class SkierServicesImplTest {
         when(skierRepository.findAll()).thenReturn(Arrays.asList(skier));
         List<Skier> result = skierServices.retrieveAllSkiers();
 
-        log.info("\nTest RetrieveAllSkiers: Retrieved {} skiers", result.size());
+        log.info("\nTest RetrieveAllSkiers: {} ", result );
         assertNotNull(result);
         assertEquals(1, result.size());
         assertEquals(skier.getNumSkier(), result.get(0).getNumSkier());
