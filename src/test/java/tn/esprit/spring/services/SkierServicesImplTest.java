@@ -60,6 +60,7 @@ public class SkierServicesImplTest {
         subscription.setStartDate(LocalDate.now());
         skier.setSubscription(subscription);
         skier.setRegistrations(new HashSet<>());
+        skier.setPistes(new HashSet<>()); // Initialize pistes
     }
 
     @Test
