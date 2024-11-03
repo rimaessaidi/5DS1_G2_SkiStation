@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(CourseRestController.class)
-public class CourseRestControllerTest {
+class CourseRestControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -44,12 +44,12 @@ public class CourseRestControllerTest {
     }
 
     @Test
-    public void testAddCourse() throws Exception {
+    void testAddCourse() throws Exception {
         when(courseServices.addCourse(any(Course.class))).thenReturn(course);
 
         mockMvc.perform(post("/course/add")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"level\":3,\"typeCourse\":\"THEORY\",\"support\":\"ONLINE\",\"price\":200.0,\"timeSlot\":2}"))
+                        .content("{\"level\":3,\"typeCourse\":\"INDIVIDUAL\",\"support\":\"SNOWBOARD\",\"price\":200.0,\"timeSlot\":2}"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.numCourse").value(course.getNumCourse()))
                 .andExpect(jsonPath("$.level").value(course.getLevel()))
@@ -60,7 +60,7 @@ public class CourseRestControllerTest {
     }
 
     @Test
-    public void testGetAllCourses() throws Exception {
+    void testGetAllCourses() throws Exception {
         List<Course> courses = Arrays.asList(course);
         when(courseServices.retrieveAllCourses()).thenReturn(courses);
 
@@ -74,7 +74,7 @@ public class CourseRestControllerTest {
     }
 
     @Test
-    public void testUpdateCourse() throws Exception {
+    void testUpdateCourse() throws Exception {
         course.setLevel(4);
         when(courseServices.updateCourse(any(Course.class))).thenReturn(course);
 
@@ -88,7 +88,7 @@ public class CourseRestControllerTest {
     }
 
     @Test
-    public void testGetById() throws Exception {
+    void testGetById() throws Exception {
         when(courseServices.retrieveCourse(course.getNumCourse())).thenReturn(course);
 
         mockMvc.perform(get("/course/get/{id-course}", course.getNumCourse()))
