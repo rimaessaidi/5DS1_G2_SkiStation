@@ -19,6 +19,7 @@ import java.util.Optional;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
+
 @Slf4j // Adds a logger with Lombok
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -70,7 +71,7 @@ public class SkierServicesImplTest {
         assertEquals(1, result.size());
         assertEquals(skier.getNumSkier(), result.get(0).getNumSkier());
         verify(skierRepository).findAll();
-        log.info("\nTest AssignSkierToSubscription: Assigned Skier {} to Subscription {}", skier, subscription);
+        log.info("\nRetrieved all skiers: {}", result);
     }
 
     @Test
@@ -82,8 +83,7 @@ public class SkierServicesImplTest {
         assertEquals(skier.getNumSkier(), result.getNumSkier());
         assertEquals(subscription.getEndDate(), skier.getSubscription().getEndDate());
         verify(skierRepository).save(skier);
-        log.info("\nTest AssignSkierToSubscription: Assigned Skier {} to Subscription {}", skier, subscription);
-        
+        log.info("\nAdded skier: {}", result);
     }
 
     @Test
@@ -96,6 +96,7 @@ public class SkierServicesImplTest {
         assertNotNull(result);
         assertEquals(subscription, result.getSubscription());
         verify(skierRepository).save(skier);
+        log.info("\nAssigned skier {} to subscription {}", skier.getNumSkier(), subscription.getNumSub());
     }
 
     @Test
@@ -110,6 +111,7 @@ public class SkierServicesImplTest {
         assertNotNull(result);
         verify(courseRepository).getById(1L);
         verify(registrationRepository, times(skier.getRegistrations().size())).save(any(Registration.class));
+        log.info("\nAdded skier {} and assigned to course {}", skier.getNumSkier(), course.getNumCourse());
     }
 
     @Test
@@ -117,6 +119,7 @@ public class SkierServicesImplTest {
         doNothing().when(skierRepository).deleteById(1L);
         skierServices.removeSkier(1L);
         verify(skierRepository).deleteById(1L);
+        log.info("\nRemoved skier with ID {}", 1L);
     }
 
     @Test
@@ -127,6 +130,7 @@ public class SkierServicesImplTest {
         assertNotNull(result);
         assertEquals(skier.getNumSkier(), result.getNumSkier());
         verify(skierRepository).findById(1L);
+        log.info("\nRetrieved skier with ID {}", 1L);
     }
 
     @Test
@@ -142,6 +146,7 @@ public class SkierServicesImplTest {
         assertNotNull(result);
         assertTrue(result.getPistes().contains(piste));
         verify(skierRepository).save(skier);
+        log.info("\nAssigned skier {} to piste {}", skier.getNumSkier(), piste.getNumPiste());
     }
 
     @Test
@@ -153,5 +158,6 @@ public class SkierServicesImplTest {
         assertEquals(1, result.size());
         assertEquals(skier.getNumSkier(), result.get(0).getNumSkier());
         verify(skierRepository).findBySubscription_TypeSub(TypeSubscription.ANNUAL);
+        log.info("\nRetrieved skiers by subscription type: {}", TypeSubscription.ANNUAL);
     }
 }
