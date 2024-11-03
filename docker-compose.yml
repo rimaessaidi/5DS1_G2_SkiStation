@@ -19,7 +19,7 @@ services:
 
 
   spring_app:
-    image: mariemsebai/skiprojectexam
+    image: mariemsebai/skiprojectexam:15
     container_name: skiprojectexam
     restart: on-failure
     networks:
