@@ -5,54 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/CourseServicesImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/SkierServicesImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/entities/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/GestionStationSkiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/GestionStationSkiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/configs/OpenAPIConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/configs/OpenAPIConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/CourseRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/CourseRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/InstructorRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/InstructorRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/PisteRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/PisteRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/RegistrationRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/RegistrationRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SkierRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SkierRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SubscriptionRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/controllers/SubscriptionRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Instructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Instructor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Piste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Piste.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Registration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Skier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Subscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Subscription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Support.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/Support.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeSubscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/entities/TypeSubscription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ICourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ICourseRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IInstructorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IInstructorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IPisteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IPisteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IRegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/IRegistrationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISkierRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISkierRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISubscriptionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/CourseServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ICourseServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ICourseServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IInstructorServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IInstructorServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IPisteServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IPisteServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IRegistrationServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/IRegistrationServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISkierServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISkierServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISubscriptionServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/ISubscriptionServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/InstructorServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/InstructorServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/PisteServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/PisteServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/RegistrationServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SkierServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/services/SubscriptionServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/CourseServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/services/CourseServicesImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +157,7 @@
       <workItem from="1730497056654" duration="1355000" />
       <workItem from="1730567712830" duration="2764000" />
       <workItem from="1730574482945" duration="8315000" />
-      <workItem from="1730630316819" duration="3140000" />
+      <workItem from="1730630316819" duration="4217000" />
     </task>
     <servers />
   </component>
