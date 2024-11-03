@@ -39,7 +39,6 @@ public class SkierRestController {
                                            @PathVariable("numCourse") Long numCourse) {
         // Convert SkierDTO to Skier entity
         Skier skier = new Skier();
-        skier.setNumSkier(skierDTO.getNumSkier());
         skier.setFirstName(skierDTO.getFirstName());
         skier.setLastName(skierDTO.getLastName());
         skier.setDateOfBirth(skierDTO.getDateOfBirth());
