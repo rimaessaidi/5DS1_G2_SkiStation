@@ -1,68 +1,56 @@
 package tn.esprit.spring.services;
-import org.junit.*;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import tn.esprit.spring.entities.Course;
+import tn.esprit.spring.entities.TypeCourse;
+import tn.esprit.spring.entities.Support;
 import tn.esprit.spring.repositories.ICourseRepository;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+import tn.esprit.spring.services.CourseServicesImpl;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit4.SpringRunner;
-import lombok.extern.slf4j.Slf4j;
-
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
-@SpringBootTest // Load the full application context
-@RunWith(SpringRunner.class) // Use SpringRunner for Spring Boot tests in JUnit 4
-@Slf4j // Adds a logger with Lombok
 public class CourseServicesImplTest {
 
-    @Autowired
-    private CourseServicesImpl courseServices; // Use @Autowired instead of @InjectMocks
+    @Mock
+    private ICourseRepository courseRepository;
 
-    @MockBean
-    private ICourseRepository courseRepository; // MockBean for dependency
+    @InjectMocks
+    private CourseServicesImpl courseServices;
 
     private Course course;
-    private Course course2;
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    public void setup() {
+        MockitoAnnotations.openMocks(this);
         course = new Course();
         course.setNumCourse(1L);
-        course.setLevel(1);
-        course.setPrice(100.0f);
-        // Set other properties as needed
-        course2 = new Course();
-        course2.setNumCourse(2L);
-        course2.setLevel(3);
-        course2.setPrice(250.0f);
+        course.setLevel(3);
+        course.setTypeCourse(TypeCourse.COLLECTIVE_CHILDREN);
+        course.setSupport(Support.SKI);
+        course.setPrice(200.0f);
+        course.setTimeSlot(2);
     }
 
     @Test
     public void testRetrieveAllCourses() {
-        List<Course> courses = new ArrayList<>();
-        courses.add(course);
-        courses.add(course2);
-        courses.add(course);
-        courses.add(course2);
+        List<Course> courses = Arrays.asList(course);
         when(courseRepository.findAll()).thenReturn(courses);
 
         List<Course> result = courseServices.retrieveAllCourses();
-        // Use streams to format the output for better readability
-        String formattedCourses = result.stream()
-                .map(c -> String.format("%nCourse ID: %d, Level: %d, Price: %.2f ",
-                        c.getNumCourse(), c.getLevel(), c.getPrice()))
-                .collect(Collectors.joining());
+        assertEquals(1, result.size());
+        assertEquals("THEORY", result.get(0).getTypeCourse().toString());
+        assertEquals(Support.SKI, result.get(0).getSupport());
 
-        log.info("\n Retrieved courses: {}", formattedCourses);
+        verify(courseRepository, times(1)).findAll();
     }
 
     @Test
@@ -70,27 +58,33 @@ public class CourseServicesImplTest {
         when(courseRepository.save(any(Course.class))).thenReturn(course);
 
         Course result = courseServices.addCourse(course);
-        assertNotNull(result);
-        assertEquals(course.getNumCourse(), result.getNumCourse());
-        log.info("\n Added course: {}", result);
+        assertEquals(3, result.getLevel());
+        assertEquals(TypeCourse.COLLECTIVE_CHILDREN, result.getTypeCourse());
+        assertEquals(200.0f, result.getPrice());
+
+        verify(courseRepository, times(1)).save(any(Course.class));
     }
 
     @Test
     public void testUpdateCourse() {
+        course.setLevel(4);
         when(courseRepository.save(any(Course.class))).thenReturn(course);
 
         Course result = courseServices.updateCourse(course);
-        assertNotNull(result);
-        log.info("\n Updated course: {}", result);
+        assertEquals(4, result.getLevel());
+        assertEquals(Support.SNOWBOARD, result.getSupport());
+
+        verify(courseRepository, times(1)).save(any(Course.class));
     }
 
     @Test
     public void testRetrieveCourse() {
-        when(courseRepository.findById(1L)).thenReturn(java.util.Optional.of(course));
+        when(courseRepository.findById(course.getNumCourse())).thenReturn(Optional.of(course));
 
-        Course result = courseServices.retrieveCourse(1L);
-        assertNotNull(result);
-        assertEquals(course.getNumCourse(), result.getNumCourse());
-        log.info("\n Retrieved course: {}", result);
+        Course result = courseServices.retrieveCourse(course.getNumCourse());
+        assertEquals(3, result.getLevel());
+        assertEquals(TypeCourse.COLLECTIVE_CHILDREN, result.getTypeCourse());
+
+        verify(courseRepository, times(1)).findById(course.getNumCourse());
     }
 }
