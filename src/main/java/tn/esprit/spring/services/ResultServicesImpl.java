@@ -35,7 +35,7 @@ public class ResultServicesImpl implements  IResultServices{
         log.info("Adding new result: {}", result);
         try{
             Result addedResult = resultRepository.save(result);
-            log.info("Successfully added result with ID: {}", addedResult.numResult());
+            log.info("Successfully added result with ID: {}", addedResult.getNumResult());
             return addedResult;
         }
         catch(Exception e){
