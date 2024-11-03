@@ -27,6 +27,9 @@ public class SkierRestController {
         skier.setLastName(skierDTO.getLastName());
         skier.setFirstName(skierDTO.getFirstName());
         skier.setDateOfBirth(skierDTO.getDateOfBirth());
+        skier.setSubscription(skierDTO.getSubscription());
+        skier.setRegistrations(skierDTO.getRegistrations());
+
         // Set other fields as necessary
 
         return skierServices.addSkier(skier);
