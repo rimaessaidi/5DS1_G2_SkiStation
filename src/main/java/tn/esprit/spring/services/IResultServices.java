@@ -8,7 +8,7 @@ public interface IResultServices {
 
     List<Result> retrieveAllResults();
 
-    Result addResult(Piste  piste);
+    Result addResult(Result  result);
 
     void removeResult (Long numResult);
 

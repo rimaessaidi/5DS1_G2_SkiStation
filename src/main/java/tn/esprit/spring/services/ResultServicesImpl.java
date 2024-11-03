@@ -24,11 +24,11 @@ public class ResultServicesImpl implements  IResultServices{
 
     @Override
     public void removeResult(Long numResult) {
-        resultRepository.deleteById(numPiste);
+        resultRepository.deleteById(numResult);
     }
 
     @Override
-    public Piste retrieveResult(Long numResult) {
-        return resultRepository.findById(numPiste).orElse(null);
+    public Result retrieveResult(Long numResult) {
+        return resultRepository.findById(numResult).orElse(null);
     }
 }
