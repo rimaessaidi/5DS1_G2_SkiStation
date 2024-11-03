@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class GestionStationSkiApplicationTests {
     @Test
     void contextLoads() {
-        // Ajoutez une assertion pour vérifier que le contexte se charge correctement
-        assertTrue(true); // Changez ceci en l'assertion appropriée pour votre test
+
     }
 }

@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="Main test class creation">
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/repositories/ISubscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/repositories/ISubscriptionRepository.java" afterDir="false" />
+    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="@repo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISubscriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/spring/repositories/ISubscriptionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gestion-station-ski-1.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.GestionStationSkiApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.spring.GestionStationSkiApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.GestionStationSkiApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.spring.GestionStationSkiApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/GestionStationSkiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/spring/GestionStationSkiApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +52,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DhiaBenAmmar__5DS1__G2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/onsbe/IdeaProjects/gestion-station-ski&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.haulmont.jpb.repository&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;979cb177730d39751abecc44667566eb&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.gestion-station-ski [clean].executor": "Run",
+    "Maven.gestion-station-ski [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "DhiaBenAmmar__5DS1__G2",
+    "last_opened_file_path": "C:/Users/onsbe/IdeaProjects/gestion-station-ski",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.haulmont.jpb.repository",
+    "spring.configuration.checksum": "979cb177730d39751abecc44667566eb"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tn.esprit.spring.configs" />
@@ -121,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730539814145</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="@repo">
+      <option name="closed" value="true" />
+      <created>1730560174416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730560174416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +153,7 @@
     <MESSAGE value="ajout de assetTrue" />
     <MESSAGE value="SubscriptionRepositoryUnitTest creation" />
     <MESSAGE value="Main test class creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main test class creation" />
+    <MESSAGE value="@repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="@repo" />
   </component>
 </project>
