@@ -63,6 +63,21 @@ import static org.mockito.Mockito.*;
 
 
 
+   // Test showMonthlyRecurringRevenue for calculation
+   @Test
+   void testShowMonthlyRecurringRevenue() {
+      when(subscriptionRepository.recurringRevenueByTypeSubEquals(TypeSubscription.MONTHLY)).thenReturn(100f);
+      when(subscriptionRepository.recurringRevenueByTypeSubEquals(TypeSubscription.SEMESTRIEL)).thenReturn(200f);
+      when(subscriptionRepository.recurringRevenueByTypeSubEquals(TypeSubscription.ANNUAL)).thenReturn(1200f);
+
+      subscriptionServices.showMonthlyRecurringRevenue();
+
+      verify(subscriptionRepository, times(1)).recurringRevenueByTypeSubEquals(TypeSubscription.MONTHLY);
+      verify(subscriptionRepository, times(1)).recurringRevenueByTypeSubEquals(TypeSubscription.SEMESTRIEL);
+      verify(subscriptionRepository, times(1)).recurringRevenueByTypeSubEquals(TypeSubscription.ANNUAL);
+   }
+
+
     // Add more test methods as needed...
 
 }

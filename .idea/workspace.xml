@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="committt">
+    <list default="true" id="9a3bcce4-359d-484f-bfc2-957db2cf91fe" name="Changes" comment="bad practices correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/GestionStationSkiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/spring/GestionStationSkiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/GestionStationSkiApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/SubscriptionServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/spring/SubscriptionServicesImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730595415534</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bad practices correction">
+      <option name="closed" value="true" />
+      <created>1730677118665</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730677118665</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +170,7 @@
     <MESSAGE value="@repo" />
     <MESSAGE value="test changes and servicestest imp" />
     <MESSAGE value="committt" />
-    <option name="LAST_COMMIT_MESSAGE" value="committt" />
+    <MESSAGE value="bad practices correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="bad practices correction" />
   </component>
 </project>
