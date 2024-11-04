@@ -1,4 +1,7 @@
 package tn.esprit.spring.services;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +26,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(CourseRestController.class)
 class CourseRestControllerTest {
 
+    private static final Logger logger = LogManager.getLogger(CourseRestControllerTest.class);
+
     @Autowired
     private MockMvc mockMvc;
 
@@ -40,11 +45,13 @@ class CourseRestControllerTest {
         course.setSupport(Support.SKI);
         course.setPrice(200.0f);
         course.setTimeSlot(2);
-        course.setRegistrations(new HashSet<>()); // Mock empty set of registrations
+        course.setRegistrations(new HashSet<>());
+        logger.info("Setup completed for CourseRestControllerTest");
     }
 
     @Test
     void testAddCourse() throws Exception {
+        logger.info("Starting testAddCourse");
         when(courseServices.addCourse(any(Course.class))).thenReturn(course);
 
         mockMvc.perform(post("/course/add")
@@ -57,10 +64,12 @@ class CourseRestControllerTest {
                 .andExpect(jsonPath("$.support").value(course.getSupport().toString()));
 
         verify(courseServices, times(1)).addCourse(any(Course.class));
+        logger.info("Completed testAddCourse successfully");
     }
 
     @Test
     void testGetAllCourses() throws Exception {
+        logger.info("Starting testGetAllCourses");
         List<Course> courses = Arrays.asList(course);
         when(courseServices.retrieveAllCourses()).thenReturn(courses);
 
@@ -71,10 +80,12 @@ class CourseRestControllerTest {
                 .andExpect(jsonPath("$[0].level").value(course.getLevel()));
 
         verify(courseServices, times(1)).retrieveAllCourses();
+        logger.info("Completed testGetAllCourses successfully");
     }
 
     @Test
     void testUpdateCourse() throws Exception {
+        logger.info("Starting testUpdateCourse");
         course.setLevel(4);
         when(courseServices.updateCourse(any(Course.class))).thenReturn(course);
 
@@ -85,10 +96,12 @@ class CourseRestControllerTest {
                 .andExpect(jsonPath("$.level").value(course.getLevel()));
 
         verify(courseServices, times(1)).updateCourse(any(Course.class));
+        logger.info("Completed testUpdateCourse successfully");
     }
 
     @Test
     void testGetById() throws Exception {
+        logger.info("Starting testGetById");
         when(courseServices.retrieveCourse(course.getNumCourse())).thenReturn(course);
 
         mockMvc.perform(get("/course/get/{id-course}", course.getNumCourse()))
@@ -97,5 +110,6 @@ class CourseRestControllerTest {
                 .andExpect(jsonPath("$.level").value(course.getLevel()));
 
         verify(courseServices, times(1)).retrieveCourse(course.getNumCourse());
+        logger.info("Completed testGetById successfully");
     }
 }
